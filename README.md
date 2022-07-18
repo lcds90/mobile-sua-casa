@@ -1,33 +1,76 @@
-# Mobile sua casa (mobilesuacasa)
+# 🏘️ mobiliar-se ✨
 
-A Quasar Project
+aplicação de organização de items para colocar o que comprar para a casa
 
-## Install the dependencies
+<details>
+
+<summary><b>🖥️ instruções técnicas</b></summary>
+
+## 🛠️ Instalação
+
 ```bash
-yarn
-# or
 npm install
 ```
+> instala as dependências
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+* * *
+
+## ▶️ Servidor local
+
 ```bash
-quasar dev
+npm run dev
 ```
+> inicia o servidor em http://localhost:3000
 
+* * *
 
-### Lint the files
+## 🎇 Produção
+
 ```bash
-yarn lint
-# or
+npm run build
+```
+> realiza o build para produção
+
+```bash
+npm run build:pwa
+```
+> realize o build em modo PWA
+
+
+## Lint the files
+```bash
 npm run lint
 ```
 
+## Links auxiliares
+  - [quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js)
 
+* * *
 
-### Build the app for production
-```bash
-quasar build
-```
+</details>
 
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+# experiência ✨👤
+
+### 🍁 home
+ao entrar no app, inicializar o mapa da casa, e cada parte onde ela clicar ela podera armazenar uma *foto do ambiente*
+
+salvando as coordenadas para poder gerenciar nessa foto colocando links acima da imagem, quase criando um visual para itens aonde como quer mobiliar o ambiente
+
+### 💸 carteira
+possuirá uma carteira, onde pode armazenar os preços e os links que foram adicionados
+
+### 🪧 categorias
+tabela onde é listada categorias em relação a sua base
+
+- pré-definidas: Quarto, Sala, Banheiro, Cozinha
+- adição de categorias personalizadas
+
+### 🔗 geral
+tabela onde é listado todos os itens, categoria, preço e seus devidos links, além do valor disponível
+
+* * *
+
+# 🗺️ releases planejadas
+
+- *Aplicativo único*: Somente offline, com banco de dados integrado
+- *Modo família*: Permite o compartilhamento entre contas
