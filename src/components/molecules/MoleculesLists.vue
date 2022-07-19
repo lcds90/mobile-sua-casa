@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AtomItem from '../atoms/AtomItem.vue';
+import { AtomItem } from 'src/components';
 
 interface IProps {
   items: Array<{

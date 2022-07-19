@@ -21,7 +21,8 @@ defineProps<IProps>();
     <q-item-section avatar>
       <q-icon
         color="primary"
-        name="bluetooth"
+        :name="item.icon"
+        :title="item.title"
       />
     </q-item-section>
     <q-item-section>{{ item.title }}</q-item-section>

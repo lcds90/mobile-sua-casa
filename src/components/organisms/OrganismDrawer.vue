@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import MoleculesLists from '../molecules/MoleculesLists.vue';
+import { MoleculesLists } from 'src/components';
 
 interface IProps {
   leftDrawerOpen: boolean;
