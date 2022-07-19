@@ -12,5 +12,11 @@
     "typescript",
     "vue"
   ],
+  "material-icon-theme.folders.associations": {
+    "composables": "container",
+    "atoms": "cluster",
+    "molecules": "lua",
+    "organisms": "mjml"
+  },
   "typescript.tsdk": "node_modules/typescript/lib"
 }
