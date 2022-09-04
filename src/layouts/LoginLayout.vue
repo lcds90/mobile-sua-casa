@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpR fFf">
 
-    <q-page-container>
+    <q-page-container class="login-layout">
       <router-view />
     </q-page-container>
 
@@ -18,3 +18,12 @@
 
   </q-layout>
 </template>
+
+<style scoped>
+.login-layout {
+  height: 100vh;
+  overflow-y: auto;
+  display: grid;
+  place-items: center;
+}
+</style>

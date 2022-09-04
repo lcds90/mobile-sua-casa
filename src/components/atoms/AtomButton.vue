@@ -1,10 +1,16 @@
 <script setup lang="ts">
 interface AtomButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
   icon: string;
+  label?: string;
+  type?: string;
+  color?: string;
+  round?: boolean;
 }
 
-defineProps<AtomButtonProps>();
+withDefaults(defineProps<AtomButtonProps>(), {
+  round: false,
+});
 
 </script>
 
@@ -12,9 +18,12 @@ defineProps<AtomButtonProps>();
   <q-btn
     flat
     dense
-    round
+    :round="round"
+    :color="color"
     :icon="icon"
     aria-label="Menu"
     @click="onClick"
+    :type="type"
+    :label="label"
   />
 </template>
