@@ -13,7 +13,7 @@ defineProps<IProps>();
   <q-header elevated>
     <molecule-toolbar
       :onClick="toggleLeftDrawer"
-      title="Quasar app"
+      title="Mobile sua casa"
       :text="`Quasar v ${$q.version}`"
     />
   </q-header>

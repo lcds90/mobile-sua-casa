@@ -25,11 +25,24 @@ export default route((/* { store, ssrContext } */) => {
   const Router = createRouter({
     scrollBehavior: () => ({ left: 0, top: 0 }),
     routes,
-
     // Leave this as is and make changes in quasar.conf.js instead!
     // quasar.conf.js -> build -> vueRouterMode
     // quasar.conf.js -> build -> publicPath
     history: createHistory(process.env.VUE_ROUTER_BASE),
+  });
+
+  Router.beforeEach((to, from, next) => {
+    if (to.matched.some((record) => record.meta.requiresAuth)) {
+      // this route requires auth, check if logged in
+      // if not, redirect to login page.
+      if (!localStorage.getItem('mobile-sua-casa-logged-in')) {
+        next({ name: 'Login' });
+      } else {
+        next(); // go to wherever I'm going
+      }
+    } else {
+      next(); // does not require auth, make sure to always call next()!
+    }
   });
 
   return Router;
