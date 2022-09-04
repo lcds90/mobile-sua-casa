@@ -18,5 +18,6 @@
     "molecules": "lua",
     "organisms": "mjml"
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "rpc.enabled": true
 }
